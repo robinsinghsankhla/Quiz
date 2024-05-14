@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "560612281893",
+    "project_id": "quiz-ed902",
+    "storage_bucket": "quiz-ed902.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560612281893:android:3c982785390bd1414079cc",
+        "android_client_info": {
+          "package_name": "com.robin.quiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3aft5h6ocL5_4h4FaGXaa9SmsZhtavhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

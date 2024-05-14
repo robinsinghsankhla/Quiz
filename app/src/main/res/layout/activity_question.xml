@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp">
+        <TextView
+            android:id="@+id/quiz_question_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Question 7/20"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <TextView
+            android:id="@+id/quiz_question_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="5:10"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/timer_clip"
+            android:layout_toStartOf="@id/quiz_question_timer"
+            android:layout_marginEnd="3dp"
+            app:tint="@color/orange" />
+    </RelativeLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/quiz_question_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="5dp"
+        android:progress="70"/>
+    <TextView
+        android:id="@+id/quiz_question_text"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="250dp"
+        android:text="What is android?"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/corner_border"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/quiz_question_btn01"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="5dp"
+        android:backgroundTint="@color/grey"
+        android:text="Ans. A"
+        android:textSize="18sp"
+        android:textAlignment="textStart"/>
+    <Button
+        android:id="@+id/quiz_question_btn02"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="5dp"
+        android:backgroundTint="@color/grey"
+        android:text="Ans. B"
+        android:textSize="18sp"
+        android:textAlignment="textStart"/>
+    <Button
+        android:id="@+id/quiz_question_btn03"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="5dp"
+        android:backgroundTint="@color/grey"
+        android:text="Ans. C"
+        android:textSize="18sp"
+        android:textAlignment="textStart"/>
+    <Button
+        android:id="@+id/quiz_question_btn04"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="5dp"
+        android:backgroundTint="@color/grey"
+        android:text="Ans. D"
+        android:textSize="18sp"
+        android:textAlignment="textStart"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/quiz_question_btn_next"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</LinearLayout>
